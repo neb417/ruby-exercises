@@ -16,9 +16,7 @@ attr_reader :name, :color, :rider, :meals
 
     def eat
       @meals +=1
-      if meals == 3
-        @hungry = false
-      end
+      @hungry = false if meals == 3
     end
 
 end
